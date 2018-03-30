@@ -5,7 +5,8 @@
 `store` `action` `reducer` `dispatch` `subscribe` `createStore(reducer)` `getState`  
 理解它们的作用以及它们之间是如何配合使用的
 
-redux的<a href="http://cn.redux.js.org/docs/basics/" target="_blank" title="redux中文官网">中文官网</a>基础部分 和 <a href="http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html" target="_blank" title="阮一峰的redux入门教程">阮一峰的redux入门教程</a> 反复看, 理解起来就能稍微快些.
+redux的<a href="http://cn.redux.js.org/docs/basics/" target="_blank" title="redux中文官网">中文官网</a>基础部分  
+和 <a href="http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html" target="_blank" title="阮一峰的redux入门教程">阮一峰的redux入门教程</a> 反复看, 理解起来就能稍微快些.
 
 简单记一下几个使用redux的要点吧:  
 
