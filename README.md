@@ -1,24 +1,26 @@
 # todolist-redux
 这是之前已经做过的demo, 学习redux时 官方给的demo就有todolist正好拿来改  
 
-`redux`理解起来比较困难, 需要把把相关的概念如:  
+`redux`理解起来比较困难, 需要把相关的概念如:  
 `store` `action` `reducer` `dispatch` `subscribe` `createStore(reducer)` `getState`  
 理解它们的作用以及它们之间是如何配合使用的
 
-redux的中文官网基础部分 和 阮一峰的redux入门教程 反复看, 理解起来就能稍微快些.
+redux的[中文官网](http://cn.redux.js.org/docs/basics/ "redux中文官网")基础部分 和 [阮一峰的redux入门教程](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html "阮一峰的redux入门教程") 反复看, 理解起来就能稍微快些.
 
-简单记一下几个使用redux的要点吧：  
+简单记一下几个使用redux的要点吧:  
+
 0.**三大原则**  
 `单一数据源` `State 是只读的` `使用纯函数来执行修改`
 
 1.要在顶层(有**ReactDOM.render**的那个文件)定义`store` 然后 当作props传递给App组件, App组件再通过`context`传递给内部子组件  
+
 **在顶层监听函数**  
 <pre>
 <code>
 const render = () => ReactDOM.render...
 store.subscribe(render)
-<pre>
-<code>
+</pre>
+</code>
 
 2.`action` 里的 `type` 种类如果很多 可以单独从**actiontypes.js**文件引入type常量
 比如:
